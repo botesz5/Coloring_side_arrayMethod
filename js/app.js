@@ -26,7 +26,8 @@ const makeBoxes = () => {
         {number: 14},
         {number: 15}
     ];
-    const content = data.map(d =)
+    const content = data.map(({number}) => `<div class="box" id="${number}">${number}</div>`);
+    return content;
 }
 
 //A négyzetek megjelenítése a html-ben
